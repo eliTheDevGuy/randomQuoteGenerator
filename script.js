@@ -10,9 +10,47 @@ project 1 - A Random Quote Generator
 /*** 
  * `quotes` array 
 ***/
+const quote1 = {
+  quote: "" ,
+  source: "" ,
+  citation: "" ,
+  year: 0 
+} ;
+const quote2 = {
+  quote: "" ,
+  source: "" ,
+  citation: "" ,
+  year: 0 
+} ;
+const quote3 = {
+  quote: "" ,
+  source: "" ,
+  citation: "" ,
+  year: 0 
+} ;
+const quote4 = {
+  quote: "" ,
+  source: "" ,
+  citation: "" ,
+  year: 0 ,
+} ;
+const quote5 = {
+  quote: "" ,
+  source: "" ,
+  citation: "" ,
+  year: 0 
+} ;
 
+const quotes = [
+  quote1 ,
+  quote2 ,
+  quote3 ,
+  quote4 ,
+  quote5 
 
+] ;
 
+console.log(quotes[0]);
 /***
  * `getRandomQuote` function
 ***/
