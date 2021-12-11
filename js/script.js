@@ -73,6 +73,18 @@ function getRandomQuote() {
   return quotes[randomNumber];
   }
 
+/*Creates function getRandomColor which uses Math.random on the 3 values 
+in an rbg trio to change the style of the body elements background color
+style to random numbers in the rbg range (0-255)*/
+
+function getRandomColor() {
+  let r = Math.random() * 255;
+  let g = Math.random() * 255;
+  let b = Math.random() *255;
+
+  document.body.style.backgroundColor = `rgb( ${r}, ${g}, ${b} )`
+}
+
 /***
  * `printQuote` function
 ***/
@@ -83,6 +95,7 @@ different pieces into randomString. It then returns the concatenated string
 onto the page via quote-box element*/
 
 function printQuote() {
+getRandomColor();
 let randomQuote = getRandomQuote();
 let randomString = `<p class="quote">${randomQuote.quote}</p>
                     <p class="source">${randomQuote.source}`;
