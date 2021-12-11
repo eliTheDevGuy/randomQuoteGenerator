@@ -50,12 +50,16 @@ const quotes = [
 
 ] ;
 
-console.log(quotes[0]);
 /***
  * `getRandomQuote` function
 ***/
 
 
+function getRandomNumber(array) {
+   let randomNumber = Math.floor(Math.random() * array.length ) ;
+   console.log(randomNumber);
+  return randomNumber;
+  }
 
 /***
  * `printQuote` function
