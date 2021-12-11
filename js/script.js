@@ -89,10 +89,11 @@ function getRandomColor() {
  * `printQuote` function
 ***/
 
-/*Creates a function called printQuote which calls the getRandomQuote
+/* Sets interval for my function to 7 second autorefresh. Creates a function called printQuote which calls the getRandomQuote
 function  to get a random quote object, then concatenates the 
 different pieces into randomString. It then returns the concatenated string
 onto the page via quote-box element*/
+setInterval(printQuote,7000);
 
 function printQuote() {
 getRandomColor();
