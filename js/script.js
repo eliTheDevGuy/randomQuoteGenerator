@@ -13,39 +13,39 @@ project 1 - A Random Quote Generator
 
 //Creates quote objects with quote information
 const quote1 = {
-  quote: "1" ,
-  source: "1" ,
-  citation: "1" ,
-  year: 1 ,
-  tag: "1"
+  quote: "What does not kill me makes me stronger" ,
+  source: "Frederich Nietzsche" ,
+  citation: "Twilight of Idols" ,
+  year: 1888 ,
+  tag: "Historic"
 } ;
 const quote2 = {
-  quote: "2" ,
-  source: "2" ,
-  citation: "2" ,
-  year: 2 ,
-  tag: "2" 
+  quote: "Get busy living or get busy dying" ,
+  source: "Stephen King" ,
+  citation: "The Shawshank Redemption" ,
+  year: 1994 ,
+  tag: "Inspirational" 
 } ;
 const quote3 = {
-  quote: "3" ,
-  source: "3" ,
-  citation: "3" ,
-  year: 3 ,
-  tag: "3" 
+  quote: "Whether you think you can, or you think you can't you're right" ,
+  source: "Henry Ford" ,
+  citation: "" ,
+  year: 0 ,
+  tag: "Inspirational" 
 } ;
 const quote4 = {
-  quote: "4" ,
-  source: "4" ,
-  citation: "4" ,
-  year: 4 ,
-  tag: "4"
+  quote: "The greatest glory of living lies not in never falling but in rising evertimem you fall." ,
+  source: "Nelson Mandela" ,
+  citation: "White House with Bill Clinton" ,
+  year: 1998 ,
+  tag: "Historic"
 } ;
 const quote5 = {
-  quote: "5" ,
-  source: "5" ,
-  citation: "5" ,
-  year: 5 ,
-  tag: "5" 
+  quote: "If you set your goals ridiculously high and it's a failure, you will fail above everyone else's success" ,
+  source: "James Cameron" ,
+  citation: "" ,
+  year: 0 ,
+  tag: "Insirational" 
 } ;
 
 //Creates an array named quotes containing the quote objects.
@@ -100,14 +100,14 @@ getRandomColor();
 let randomQuote = getRandomQuote();
 let randomString = `<p class="quote">${randomQuote.quote}</p>
                     <p class="source">${randomQuote.source}`;
-  if ( randomString.citation != "" ) {
+  if ( randomQuote.citation != "" ) {
     randomString += `<span class="citation">${randomQuote.citation}</span>`;
   }
-  if ( randomString.year > 0 ) {
-    randomString += `<span class="year">${randomQuote.year}</span>`;
+  if ( randomQuote.year > 0 ) {
+    randomString += `<span class="year"> ${randomQuote.year}</span>`;
   } 
-  if ( randomString.tag != "" ) {
-    randomString += `<span class="tag">${randomQuote.tag}</span>`
+  if ( randomQuote.tag != "" ) {
+    randomString += `<span class="tag"> ${randomQuote.tag}</span>`
   }
   randomString += `</p>`;
 return document.getElementById('quote-box').innerHTML = randomString;
