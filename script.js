@@ -55,10 +55,9 @@ const quotes = [
 ***/
 
 
-function getRandomNumber(array) {
-   let randomNumber = Math.floor(Math.random() * array.length ) ;
-   console.log(randomNumber);
-  return randomNumber;
+function getRandomNumber() {
+   let randomNumber = Math.floor(Math.random() * quotes.length ) ;
+  return quotes[randomNumber];
   }
 
 /***
